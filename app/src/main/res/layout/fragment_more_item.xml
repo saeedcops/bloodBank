@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/about_fragment_rl"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/more_fragment_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/more"
+            android:layout_alignBottom="@id/more_fragment_toolbar"
+            android:layout_alignParentTop="true"
+            android:textColor="#fff"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/more_fragment_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Favorite"
+        android:drawablePadding="@dimen/_7sdp"
+        android:drawableStart="@drawable/ic_favorite_black_24dp"
+        android:textSize="@dimen/_25ssp"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="@dimen/_10sdp"/>
+    <TextView
+        android:id="@+id/more_fragment_contact_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Contact_us"
+        android:drawableStart="@drawable/ic_mail_outline_black_24dp"
+        android:textSize="@dimen/_25ssp"
+        android:drawablePadding="@dimen/_7sdp"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="@dimen/_10sdp"/>
+    <TextView
+        android:id="@+id/more_fragment_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/About"
+        android:drawableStart="@drawable/ic_lightbulb_outline_black_24dp"
+        android:textSize="@dimen/_25ssp"
+        android:drawablePadding="@dimen/_7sdp"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="@dimen/_10sdp"/>
+    <TextView
+        android:id="@+id/more_fragment_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Rate_in_play_store"
+        android:drawableStart="@drawable/ic_star_black_24dp"
+        android:textSize="@dimen/_25ssp"
+        android:drawablePadding="@dimen/_7sdp"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="@dimen/_10sdp"/>
+    <TextView
+        android:id="@+id/more_fragment_notification_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Notification_setting"
+        android:drawableStart="@drawable/ic_settings_black_24dp"
+        android:textSize="@dimen/_25ssp"
+        android:drawablePadding="@dimen/_7sdp"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="@dimen/_10sdp"/>
+    <TextView
+        android:id="@+id/more_fragment_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/_7sdp"
+        android:text="@string/Logout"
+        android:drawableStart="@drawable/ic_reply_all_black_24dp"
+        android:textSize="@dimen/_25ssp"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="@dimen/_10sdp"/>
+
+
+</LinearLayout>

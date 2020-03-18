@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Blood Bank Clone</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="register" translatable="false"> انشاء حساب</string>
+    <string name="confirm_password" translatable="false"> تأكيد الباسوورد</string>
+    <string name="password" translatable="false"> الباسوورد</string>
+    <string name="phone" translatable="false">  الجوال</string>
+    <string name="city" translatable="false"> المدينة</string>
+    <string name="government" translatable="false"> المحافظة</string>
+    <string name="blood" translatable="false">  فصيلة الدم</string>
+    <string name="confirm_donation" translatable="false"> اختر موعد التبرع</string>
+    <string name="confirm_last_donation" translatable="false"> تاريخ اخر تبرع</string>
+    <string name="confirm_last_email" translatable="false">البريد الالكتروني</string>
+    <string name="confirm_name" translatable="false"> الاسم</string>
+    <string name="edit_data" translatable="false"> تعديل البيانات</string>
+    <string name="birth_date" translatable="false">تاريخ الميلاد</string>
+    <string name="donation_request" translatable="false"> طلبات تبرع</string>
+    <string name="age" translatable="false"> السن</string>
+    <string name="blood_type" translatable="false">  فصيلة الدم </string>
+    <string name="number" translatable="false"> عدد الاكياس</string>
+    <string name="hos_loc" translatable="false"> موقع المستشفي</string>
+    <string name="Favorite" translatable="false"> المفضلة</string>
+    <string name="Contact_us" translatable="false"> اتصل بنا</string>
+    <string name="About" translatable="false">عنا</string>
+    <string name="Rate_in_play_store" translatable="false">تقيم التطبيق علي المتجر</string>
+    <string name="Notification_setting" translatable="false">ضبط الاشعارات</string>
+    <string name="Logout" translatable="false">تسجيل الخروج</string>
+    <string name="About_app" translatable="false">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero\'s De Finibus Bonorum et Malorum for use in a type specimen book.</string>
+    <string name="Notification" translatable="false">الاشعارات</string>
+    <string name="save" translatable="false">حفظ</string>
+    <string name="more" translatable="false">المزيد</string>
+    <string name="donate" translatable="false">تبرع</string>
+    <string name="governments" translatable="false">  المحافظة</string>
+    <string name="blood_types" translatable="false"> فصيلة الدم</string>
+    <string name="Patient" translatable="false">اسم المريض</string>
+    <string name="hospital" translatable="false">المستشفي</string>
+    <string name="call" translatable="false">اتصال</string>
+    <string name="please_phone" translatable="false">رجاءا ادخال رقم هاتفك</string>
+    <string name="please_password" translatable="false">رجاءا ادخال الباسوورد</string>
+    <string name="please_confirm_password" translatable="false">رجاءا اعادة ادخال الباسوورد</string>
+    <string name="Verification" translatable="false">رقم التأكيد</string>
+    <string name="re_password" translatable="false">Retype password</string>
+    <string name="hospital_name" translatable="false">اسم المستشفي</string>
+    <string name="title_activity_maps" translatable="false">الخريطة</string>
+    <string name="choose_location" translatable="false">اختر المنطقة</string>
+    <string name="set_location" translatable="false">حدد المنطقة</string>
+    <string name="name" translatable="false">الاسم</string>
+    <string name="bag_num" translatable="false">Bags number</string>
+    <string name="address" translatable="false">عنوان المستشفي</string>
+    <string name="note" translatable="false">ملاحظات</string>
+    <string name="create_an_account" translatable="false">انشاء حساب جديد</string>
+    <string name="message_title" translatable="false">عنوان الرساله</string>
+    <string name="message" translatable="false">الرساله</string>
+    <string name="send" translatable="false">ارسال</string>
+    <string name="remember" translatable="false">تذكرني</string>
+    <string name="do_forget" translatable="false">هل نسيت كلمه المرور؟</string>
+    <string name="Login" translatable="false">تسجيل الدخول</string>
+    <string name="dont_have_notification" translatable="false">you don\'t have any notifications!\nplease go a head and donate now</string>
+    <string name="default_notification_channel_id" translatable="false">الاشعارات</string>
+    <string name="fcm_message" translatable="false">الاشعارات</string>
+    <string name="post" translatable="false">المقالات</string>
+    <string name="password_not_matched">الباسوورد غير متابق</string>
+</resources>

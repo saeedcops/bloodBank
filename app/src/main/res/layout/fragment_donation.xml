@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/donation_fragment_ll_sub_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/donation_fragment_swipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+                    <LinearLayout
+                        style="@style/MyEditTextStyle"
+                        android:layout_width="0dp"
+                        android:padding="@dimen/_1sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            style="@style/MyTextViewStyle"
+                            android:id="@+id/donation_fragment_sp_blood_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/MyEditTextStyle"
+                        android:layout_width="0dp"
+                        android:padding="@dimen/_1sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_weight="1.2"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/donation_fragment_sp_government"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_gravity="center_vertical">
+
+                       <ImageButton
+                           android:id="@+id/donation_fragment_ib"
+                           android:layout_width="@dimen/_40sdp"
+                           android:layout_height="@dimen/_40sdp"
+                           android:background="@drawable/shape_circle"
+                           android:src="@drawable/ic_search_black_24dp"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/donation_fragment_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_8sdp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+</RelativeLayout>

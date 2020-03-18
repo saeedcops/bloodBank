@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/notification_fragment_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/Notification"
+            android:layout_alignBottom="@id/notification_fragment_toolbar"
+            android:layout_alignParentTop="true"
+            android:textColor="#fff"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:visibility="gone"
+            android:id="@+id/notification_fragment_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    <LinearLayout
+        android:id="@+id/notification_fragment_ll_no_notification"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginRight="@dimen/_40sdp"
+       android:layout_marginBottom="@dimen/_8sdp"
+       android:src="@drawable/notification_bg"
+       />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dont_have_notification"
+        android:textSize="@dimen/_20ssp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:layout_margin="@dimen/_10sdp"/>
+    <Button
+        android:id="@+id/notification_fragment_btn_donate"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shpe_notify"
+        android:text="@string/donate"
+        android:textColor="#fff"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_30sdp"/>
+    </LinearLayout>
+</LinearLayout>

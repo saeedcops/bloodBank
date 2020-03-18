@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/contact_us_fragment_rl"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/contact_us_fragment_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/Contact_us"
+            android:layout_alignBottom="@id/contact_us_fragment_toolbar"
+            android:layout_alignParentTop="true"
+            android:textColor="#fff"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:text="@string/phone"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_25sdp" />
+
+            <TextView
+                android:id="@+id/contact_us_fragment_tv_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:drawableStart="@drawable/ic_local_phone_black_24dp"
+                android:text=" 1234567895"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_20sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:text="@string/confirm_last_email"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_25sdp" />
+
+            <TextView
+                android:id="@+id/contact_us_fragment_tv_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:drawableStart="@drawable/ic_mail_outline_black_24dp"
+                android:text=" mail@gmail.com"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_20sdp" />
+
+            <androidx.gridlayout.widget.GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_20sdp">
+
+                <ImageView
+                    android:id="@+id/contact_us_fragment_imageView0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_column="0"
+                    app:layout_row="0"
+                    app:srcCompat="@drawable/facebook" />
+
+                <ImageView
+                    android:id="@+id/contact_us_fragment_imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_column="0"
+                    app:layout_row="1"
+                    app:srcCompat="@drawable/tweeter" />
+
+                <ImageView
+                    android:id="@+id/contact_us_fragment_imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_column="1"
+                    app:layout_row="0"
+                    app:srcCompat="@drawable/instagram" />
+
+                <ImageView
+                    android:id="@+id/contact_us_fragment_imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_column="1"
+                    app:layout_row="1"
+                    app:srcCompat="@drawable/youtube" />
+            </androidx.gridlayout.widget.GridLayout>
+
+            <EditText
+                android:id="@+id/fragment_contact_us__et_title"
+                style="@style/MyEditTextStyle"
+                android:maxLines="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/message_title" />
+
+            <EditText
+                android:id="@+id/fragment_contact_us__et_message"
+                style="@style/MyEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/message"
+                android:lines="3" />
+
+            <Button
+                android:id="@+id/contact_us_fragment_btn_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:background="@drawable/et_rectangle"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="@string/send"
+                android:textColor="@color/colorGray" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

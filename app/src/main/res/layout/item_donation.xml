@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/donation_adapter_ps_iv_donation_swipe_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_4sdp"
+    android:layout_marginTop="@dimen/_2sdp"
+    android:layout_marginEnd="@dimen/_4sdp"
+    android:background="@null"
+    app:dragEdge="left"
+    app:mode="same_level">
+
+    <LinearLayout
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_margin="@dimen/_7sdp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/donation_adapter_iv_info"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:src="@drawable/ic_info"
+                    android:textAlignment="textEnd"
+                    app:civ_circle_background_color="@color/colorPrimary"
+                    />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/donation_adapter_iv_call"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:src="@drawable/call"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+                  android:layout_height="@dimen/_70sdp"
+                  android:orientation="vertical"
+                  android:layout_toEndOf="@id/donation_adapter_tv_blood_type"
+                  android:layout_centerVertical="true"
+                  android:gravity="center"
+                  android:layout_marginStart="-50dp"
+                  android:layout_marginBottom="@dimen/_8sdp"
+                  android:background="@drawable/shpe_donation">
+
+                <TextView
+                    android:id="@+id/donation_adapter_tv_name"
+                    style="@style/donation_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/donation_adapter_tv_blood_hospital"
+                    style="@style/donation_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/donation_adapter_tv_blood_city"
+                    style="@style/donation_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+                <TextView
+                    android:id="@+id/donation_adapter_tv_blood_type"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:text="B+"
+                    android:gravity="center"
+                    android:textSize="@dimen/_25sdp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:background="@drawable/shape_circle"/>
+
+    </RelativeLayout>
+
+    </com.chauthai.swipereveallayout.SwipeRevealLayout>
+
+
+        <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_marginStart="@dimen/_4sdp"-->
+    <!--    android:layout_marginTop="@dimen/_4sdp"-->
+    <!--    android:clipToPadding="false"-->
+    <!--   >-->
+
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="@dimen/_220sdp"-->
+
+    <!--        android:layout_height="wrap_content">-->
+
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="@dimen/_70sdp"-->
+    <!--            android:orientation="vertical"-->
+    <!--            android:layout_toEndOf="@id/donation_adapter_tv_blood_type"-->
+    <!--            android:layout_centerVertical="true"-->
+    <!--            android:gravity="center"-->
+    <!--            android:layout_marginStart="-50dp"-->
+    <!--            android:layout_marginBottom="@dimen/_8sdp"-->
+    <!--            android:background="@drawable/shpe_donation">-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/donation_adapter_tv_name"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                style="@style/donation_text_view"/>-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/donation_adapter_tv_blood_hospital"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                style="@style/donation_text_view"/>-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/donation_adapter_tv_blood_city"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                style="@style/donation_text_view"/>-->
+
+    <!--        </LinearLayout>-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/donation_adapter_tv_blood_type"-->
+    <!--            android:layout_width="@dimen/_70sdp"-->
+    <!--            android:layout_height="@dimen/_70sdp"-->
+    <!--            android:text="B+"-->
+    <!--            android:gravity="center"-->
+    <!--            android:textSize="@dimen/_25sdp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:textColor="#fff"-->
+    <!--            android:background="@drawable/shape_circle"/>-->
+
+
+    <!--    </RelativeLayout>-->
+    <!--    <LinearLayout-->
+    <!--        android:layout_alignParentRight="true"-->
+    <!--        android:padding="@dimen/_8sdp"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_marginTop="@dimen/_10sdp"-->
+    <!--        android:gravity="center"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal">-->
+
+    <!--        <de.hdodenhof.circleimageview.CircleImageView-->
+    <!--            android:id="@+id/donation_adapter_iv_info"-->
+    <!--            android:layout_marginLeft="@dimen/_4sdp"-->
+    <!--            android:layout_width="@dimen/_35sdp"-->
+    <!--            android:layout_height="@dimen/_35sdp"-->
+    <!--            android:src="@drawable/ic_info"-->
+    <!--            android:textAlignment="textEnd"-->
+    <!--            app:civ_circle_background_color="@color/colorPrimary"-->
+    <!--            />-->
+    <!--        <de.hdodenhof.circleimageview.CircleImageView-->
+    <!--            android:id="@+id/donation_adapter_iv_call"-->
+    <!--            android:layout_marginLeft="@dimen/_4sdp"-->
+    <!--            android:layout_width="@dimen/_35sdp"-->
+    <!--            android:layout_height="@dimen/_35sdp"-->
+    <!--            android:src="@drawable/call"-->
+
+    <!--            app:civ_circle_background_color="@color/colorAccent"-->
+    <!--            />-->
+
+    <!--    </LinearLayout>-->
+
+
+    <!--</RelativeLayout>-->

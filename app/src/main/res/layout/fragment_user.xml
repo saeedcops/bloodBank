@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/register_fragment_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/edit_data"
+            android:layout_alignBottom="@id/register_fragment_toolbar"
+            android:layout_alignParentTop="true"
+            android:textColor="#fff"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/register_fragment_ll_sub_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_fragment_til_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/text_input"
+                app:errorTextAppearance="@style/error_appearance">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    style="@style/MyEditTextStyle"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/name_icon"
+                    android:hint="@string/confirm_name"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_fragment_til_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/text_input"
+                app:errorTextAppearance="@style/error_appearance">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    style="@style/MyEditTextStyle"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_mail_outline_black_24dp"
+                    android:hint="@string/confirm_last_email"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_fragment_til_last_donation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                style="@style/text_input"
+                app:errorTextAppearance="@style/error_appearance">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    style="@style/MyEditTextStyle"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_date_range_black_24dp"
+                    android:hint="@string/confirm_last_donation"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_fragment_til_birth_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/text_input"
+                app:errorTextAppearance="@style/error_appearance">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    style="@style/MyEditTextStyle"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_date_range_black_24dp"
+                    android:hint="@string/birth_date"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_fragment_til_choose_blood_type"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_70sdp"
+                style="@style/text_input"
+                app:errorTextAppearance="@style/error_appearance">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/MyEditTextStyle"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputEditText
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/blood_drop"
+                         />
+                    <Spinner
+                        android:id="@+id/register_fragment_sp_choose_blood_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/_1sdp"
+                        android:gravity="center_horizontal"/>
+                </LinearLayout>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_fragment_til_choose_government"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_70sdp"
+                style="@style/text_input"
+                app:errorTextAppearance="@style/error_appearance">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/MyEditTextStyle"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputEditText
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/home_icon"
+                         />
+                    <Spinner
+                        android:id="@+id/register_fragment_sp_choose_government"
+                        style="@style/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/dim_1dp"
+                        android:gravity="center_horizontal"/>
+                </LinearLayout>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_fragment_til_choose_city"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_70sdp"
+                style="@style/text_input"
+                app:errorTextAppearance="@style/error_appearance">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    style="@style/MyEditTextStyle"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/home_icon"
+                         />
+                    <Spinner
+                        android:id="@+id/register_fragment_sp_choose_city"
+                        style="@style/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/_1sdp"
+                        android:gravity="center_horizontal"/>
+                </LinearLayout>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_fragment_til_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/text_input"
+                app:errorTextAppearance="@style/error_appearance">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:inputType="phone"
+                    style="@style/MyEditTextStyle"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_local_phone_black_24dp"
+                    android:hint="@string/phone"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_fragment_til_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/text_input"
+                app:errorTextAppearance="@style/error_appearance">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:drawablePadding="@dimen/_10sdp"
+                    style="@style/MyEditTextStyle"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/password_icon"
+                    android:hint="@string/password"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_fragment_til_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/text_input"
+                app:errorTextAppearance="@style/error_appearance">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:drawablePadding="@dimen/_10sdp"
+                    style="@style/MyEditTextStyle"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/password_icon"
+                    android:hint="@string/confirm_password"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/fragment_register_btn_register"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="@dimen/_8sdp"
+                android:background="@drawable/et_rectangle"
+                android:textColor="@color/colorGray"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="@string/save"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

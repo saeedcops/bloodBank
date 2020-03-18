@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Blood Bank Clone</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="register" translatable="false"> Register</string>
+    <string name="confirm_password" translatable="false"> Confirm password</string>
+    <string name="password" translatable="false"> Password</string>
+    <string name="phone" translatable="false">  Phone</string>
+    <string name="city" translatable="false"> City</string>
+    <string name="government" translatable="false"> government</string>
+    <string name="blood" translatable="false">  Blood type</string>
+    <string name="confirm_donation" translatable="false"> Choose donation date</string>
+    <string name="confirm_last_donation" translatable="false"> Last donation date</string>
+    <string name="confirm_last_email" translatable="false">   Email address</string>
+    <string name="confirm_name" translatable="false"> Full name</string>
+    <string name="edit_data" translatable="false"> Edit data</string>
+    <string name="birth_date" translatable="false"> Birth date</string>
+    <string name="donation_request" translatable="false"> Donation Request</string>
+    <string name="age" translatable="false"> Age</string>
+    <string name="blood_type" translatable="false">  Blood type</string>
+    <string name="number" translatable="false"> Number</string>
+    <string name="hos_loc" translatable="false"> Hospital location</string>
+    <string name="Favorite" translatable="false"> Favorite</string>
+    <string name="Contact_us" translatable="false"> Contact us</string>
+    <string name="About" translatable="false">About</string>
+    <string name="Rate_in_play_store" translatable="false">Rate in play store</string>
+    <string name="Notification_setting" translatable="false">Notification setting</string>
+    <string name="Logout" translatable="false">Logout</string>
+    <string name="About_app" translatable="false">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero\'s De Finibus Bonorum et Malorum for use in a type specimen book.</string>
+    <string name="Notification" translatable="false">Notification</string>
+    <string name="save" translatable="false">Save</string>
+    <string name="more" translatable="false">More</string>
+    <string name="donate" translatable="false">Donate</string>
+    <string name="governments" translatable="false">  Governments</string>
+    <string name="blood_types" translatable="false">  Blood types</string>
+    <string name="Patient" translatable="false">Patient name</string>
+    <string name="hospital" translatable="false">Hospital</string>
+    <string name="call" translatable="false">Call</string>
+    <string name="please_phone" translatable="false">Please enter your phone number</string>
+    <string name="please_password" translatable="false">Please enter your password</string>
+    <string name="please_confirm_password" translatable="false">Please confirm password</string>
+    <string name="Verification" translatable="false">Verification code</string>
+    <string name="re_password" translatable="false">Retype password</string>
+    <string name="hospital_name" translatable="false">hospital name</string>
+    <string name="title_activity_maps" translatable="false">Map</string>
+    <string name="choose_location" translatable="false">Choose your location</string>
+    <string name="set_location" translatable="false">Set location</string>
+    <string name="name" translatable="false">Name</string>
+    <string name="bag_num" translatable="false">Bags number</string>
+    <string name="address" translatable="false">Hospital address</string>
+    <string name="note" translatable="false">Note</string>
+    <string name="create_an_account" translatable="false">Create an account</string>
+    <string name="message_title" translatable="false">Message title</string>
+    <string name="message" translatable="false">Message</string>
+    <string name="send" translatable="false">Send</string>
+    <string name="remember" translatable="false">Remember me</string>
+    <string name="do_forget" translatable="false">Do you forget your password?</string>
+    <string name="Login" translatable="false">Log in</string>
+    <string name="dont_have_notification" translatable="false">you don\'t have any notifications!\nplease go a head and donate now</string>
+    <string name="default_notification_channel_id" translatable="false">Notification</string>
+    <string name="fcm_message" translatable="false">Notification</string>
+    <string name="post" translatable="false">Post</string>
+    <string name="password_not_matched">Password not matched</string>
+</resources>
